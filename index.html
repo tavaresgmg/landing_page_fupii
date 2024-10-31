@@ -8,7 +8,7 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Landing Page - Fupii</title>
+    <title>Fupii</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap icons-->
@@ -29,8 +29,10 @@
   <body>
     <!-- Navigation-->
     <nav class="navbar navbar-light bg-light static-top">
-      <div class="container">
-        <a class="navbar-brand" href="#!">Fupii</a>
+      <div class="container d-flex justify-content-center">
+        <a class="navbar-brand" href="#!">
+          <img src="/assets/logo.png" alt="Fupii Logo" style="height: 50px" />
+        </a>
       </div>
     </nav>
     <!-- Masthead-->
@@ -115,58 +117,6 @@
         </div>
       </div>
     </section>
-    <!-- Testimonials-->
-    <section class="testimonials text-center bg-light">
-      <div class="container">
-        <h2 class="mb-5">O que nossos motoristas parceiros esperam...</h2>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-              <img
-                class="img-fluid rounded-circle mb-3"
-                src="assets/img/p1.jpeg"
-                alt="Carlos Pereira"
-              />
-              <h5>Carlos Pereira</h5>
-              <p class="font-weight-light mb-0">
-                "Estou confiante de que a Fupii elevará meu trabalho como
-                motorista a um novo patamar. A plataforma e o suporte são
-                excepcionais!"
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-              <img
-                class="img-fluid rounded-circle mb-3"
-                src="assets/img/p2.jpeg"
-                alt="João Silva"
-              />
-              <h5>João Silva</h5>
-              <p class="font-weight-light mb-0">
-                "A flexibilidade que a Fupii oferece é exatamente o que eu
-                procurava. Mal posso esperar para aproveitar todas as
-                oportunidades que essa parceria trará!"
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-              <img
-                class="img-fluid rounded-circle mb-3"
-                src="assets/img/p3.jpeg"
-                alt="Maria Oliveira"
-              />
-              <h5>Maria Oliveira</h5>
-              <p class="font-weight-light mb-0">
-                "A segurança e transparência da Fupii me dão total confiança.
-                Tenho certeza de que esta será uma parceria de sucesso!"
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- Call to Action-->
     <section class="call-to-action text-white text-center" id="signup">
       <div class="container position-relative">
@@ -180,18 +130,16 @@
     <!-- Cadastro Parceiro-->
     <section id="cadastro-parceiro" class="py-5 bg-dark text-white">
       <div class="container-fluid px-0">
-        <!-- Ajustado para container-fluid com padding 0 -->
         <div class="row justify-content-center">
           <div class="col-lg-10">
-            <!-- Aumentado de col-lg-8 para col-lg-10 -->
-            <!-- Título -->
             <h2 class="mb-4 text-center">Cadastre-se e garanta sua vaga</h2>
 
             <!-- Formulário de Cadastro -->
             <form
               class="form-cadastro"
               id="cadastroForm"
-              data-sb-form-api-token="API_TOKEN"
+              action="save_motorista.php"
+              method="POST"
             >
               <!-- 1. Informações Básicas -->
               <div class="mb-4">
@@ -199,17 +147,11 @@
                 <input
                   class="form-control form-control-lg"
                   id="nome"
+                  name="nome"
                   type="text"
                   placeholder="Seu nome completo"
-                  data-sb-validations="required"
                   required
                 />
-                <div
-                  class="invalid-feedback text-white"
-                  data-sb-feedback="nome:required"
-                >
-                  O nome é obrigatório.
-                </div>
               </div>
 
               <div class="mb-4">
@@ -217,40 +159,11 @@
                 <input
                   class="form-control form-control-lg"
                   id="whatsapp"
+                  name="whatsapp"
                   type="tel"
                   placeholder="Seu número de WhatsApp"
-                  data-sb-validations="required,phone"
                   required
                 />
-                <div
-                  class="invalid-feedback text-white"
-                  data-sb-feedback="whatsapp:required"
-                >
-                  O WhatsApp é obrigatório.
-                </div>
-                <div
-                  class="invalid-feedback text-white"
-                  data-sb-feedback="whatsapp:phone"
-                >
-                  Número de WhatsApp inválido.
-                </div>
-              </div>
-
-              <div class="mb-4">
-                <label for="email" class="form-label">Email (opcional)</label>
-                <input
-                  class="form-control form-control-lg"
-                  id="email"
-                  type="email"
-                  placeholder="Seu email"
-                  data-sb-validations="email"
-                />
-                <div
-                  class="invalid-feedback text-white"
-                  data-sb-feedback="email:email"
-                >
-                  O email não é válido.
-                </div>
               </div>
 
               <div class="mb-4">
@@ -260,17 +173,11 @@
                 <input
                   class="form-control form-control-lg"
                   id="modelo-veiculo"
+                  name="modelo"
                   type="text"
                   placeholder="Modelo do seu veículo"
-                  data-sb-validations="required"
                   required
                 />
-                <div
-                  class="invalid-feedback text-white"
-                  data-sb-feedback="modelo-veiculo:required"
-                >
-                  O modelo do veículo é obrigatório.
-                </div>
               </div>
 
               <div class="mb-4">
@@ -280,24 +187,12 @@
                 <input
                   class="form-control form-control-lg"
                   id="ano-veiculo"
+                  name="ano"
                   type="number"
                   placeholder="Ano de fabricação"
                   min="2015"
-                  data-sb-validations="required,min"
                   required
                 />
-                <div
-                  class="invalid-feedback text-white"
-                  data-sb-feedback="ano-veiculo:required"
-                >
-                  O ano do veículo é obrigatório.
-                </div>
-                <div
-                  class="invalid-feedback text-white"
-                  data-sb-feedback="ano-veiculo:min"
-                >
-                  O ano mínimo permitido é 2015.
-                </div>
               </div>
 
               <!-- 2. Perguntas de Qualificação -->
@@ -322,9 +217,9 @@
                     value="Sim"
                     required
                   />
-                  <label class="form-check-label" for="experiencia-sim">
-                    Sim
-                  </label>
+                  <label class="form-check-label" for="experiencia-sim"
+                    >Sim</label
+                  >
                 </div>
                 <div class="form-check">
                   <input
@@ -335,15 +230,9 @@
                     value="Não"
                     required
                   />
-                  <label class="form-check-label" for="experiencia-nao">
-                    Não
-                  </label>
-                </div>
-                <div
-                  class="invalid-feedback text-white"
-                  data-sb-feedback="experiencia:required"
-                >
-                  Por favor, selecione uma opção.
+                  <label class="form-check-label" for="experiencia-nao"
+                    >Não</label
+                  >
                 </div>
               </div>
 
@@ -355,33 +244,27 @@
                   <input
                     class="form-check-input"
                     type="radio"
-                    name="veiculo"
+                    name="proprio"
                     id="veiculo-proprio"
                     value="Próprio"
                     required
                   />
-                  <label class="form-check-label" for="veiculo-proprio">
-                    Próprio
-                  </label>
+                  <label class="form-check-label" for="veiculo-proprio"
+                    >Próprio</label
+                  >
                 </div>
                 <div class="form-check">
                   <input
                     class="form-check-input"
                     type="radio"
-                    name="veiculo"
+                    name="proprio"
                     id="veiculo-alugado"
                     value="Alugado"
                     required
                   />
-                  <label class="form-check-label" for="veiculo-alugado">
-                    Alugado
-                  </label>
-                </div>
-                <div
-                  class="invalid-feedback text-white"
-                  data-sb-feedback="veiculo:required"
-                >
-                  Por favor, selecione uma opção.
+                  <label class="form-check-label" for="veiculo-alugado"
+                    >Alugado</label
+                  >
                 </div>
               </div>
 
@@ -390,7 +273,9 @@
                 <h5>Você concorda com os requisitos da Fupii?</h5>
                 <ul class="list-unstyled ms-3">
                   <li>• Cumprir as normas de trânsito</li>
-                  <li>• Realizar vistoria gratuita no escritório da Fupii</li>
+                  <li>
+                    • Realizar vistoria gratuita do seu veículo em nossa sede
+                  </li>
                   <li>
                     • Apresentar-se bem para o trabalho (calça e camisa de
                     manga)
@@ -411,6 +296,7 @@
                     class="form-check-input"
                     type="checkbox"
                     id="concorda-requisitos"
+                    name="concorda_requisitos"
                     required
                   />
                   <label class="form-check-label" for="concorda-requisitos">
@@ -430,33 +316,65 @@
                 <button
                   class="btn btn-primary btn-lg"
                   id="submitButtonForm"
-                  type="submit"
+                  type="button"
+                  onclick="submitForm()"
                 >
                   Quero Fazer Parte da Fupii!
                 </button>
-              </div>
-
-              <!-- Mensagem de Sucesso -->
-              <div class="d-none" id="submitSuccessMessage">
-                <div class="text-center mt-3">
-                  <div class="fw-bolder">Cadastro realizado com sucesso!</div>
-                  <p>
-                    Em breve entraremos em contato para finalizar seu cadastro.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Mensagem de Erro -->
-              <div class="d-none" id="submitErrorMessage">
-                <div class="text-center text-danger mt-3">
-                  Erro ao enviar a mensagem!
-                </div>
               </div>
             </form>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Script JavaScript para Envio AJAX -->
+    <script>
+      function submitForm() {
+        const button = document.getElementById("submitButtonForm");
+        const originalText = button.innerHTML;
+
+        // Altera o botão para mostrar que está enviando e desativa ele
+        button.innerHTML = "Enviando...";
+        button.disabled = true;
+
+        // Cria um objeto FormData com os dados do formulário
+        const formData = new FormData(document.getElementById("cadastroForm"));
+
+        // Envia o formulário via AJAX com fetch
+        fetch("save_motorista.php", {
+          method: "POST",
+          body: formData,
+        })
+          .then((response) => response.text())
+          .then((result) => {
+            // Verifica o resultado para determinar sucesso ou erro
+            if (result.includes("sucesso")) {
+              button.innerHTML = "Cadastro realizado com sucesso!";
+              button.classList.remove("btn-primary");
+              button.classList.add("btn-success");
+            } else {
+              button.innerHTML = "Erro ao enviar. Tente novamente.";
+              button.classList.remove("btn-primary");
+              button.classList.add("btn-danger");
+            }
+          })
+          .catch((error) => {
+            button.innerHTML = "Erro ao enviar. Tente novamente.";
+            button.classList.remove("btn-primary");
+            button.classList.add("btn-danger");
+          })
+          .finally(() => {
+            // Restaura o botão ao estado original após 3 segundos
+            setTimeout(() => {
+              button.innerHTML = originalText;
+              button.classList.remove("btn-success", "btn-danger");
+              button.classList.add("btn-primary");
+              button.disabled = false;
+            }, 3000); // Tempo de 3 segundos para exibir a mensagem de sucesso ou erro
+          });
+      }
+    </script>
     <!-- Footer-->
     <footer class="footer bg-light">
       <div class="container">
