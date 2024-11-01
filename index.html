@@ -61,12 +61,17 @@
         </div>
       </div>
     </header>
-    <!-- Icons Grid-->
+    <!-- Carrossel de Ícones usando Bootstrap -->
     <section class="features-icons bg-light text-center">
-      <div class="container">
-        <div class="row">
-          <!-- Item 1 -->
-          <div class="col-lg-3 col-md-6 mb-5">
+      <div
+        id="featuresCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="6000"
+      >
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
             <div class="features-icons-item mx-auto mb-0 mb-lg-3">
               <div class="features-icons-icon d-flex">
                 <i class="bi-window m-auto text-primary"></i>
@@ -77,8 +82,8 @@
               </p>
             </div>
           </div>
-          <!-- Item 2 -->
-          <div class="col-lg-3 col-md-6 mb-5">
+          <!-- Slide 2 -->
+          <div class="carousel-item">
             <div class="features-icons-item mx-auto mb-0 mb-lg-3">
               <div class="features-icons-icon d-flex">
                 <i class="bi-layers m-auto text-primary"></i>
@@ -90,8 +95,8 @@
               </p>
             </div>
           </div>
-          <!-- Item 3 -->
-          <div class="col-lg-3 col-md-6 mb-5">
+          <!-- Slide 3 -->
+          <div class="carousel-item">
             <div class="features-icons-item mx-auto mb-0 mb-lg-3">
               <div class="features-icons-icon d-flex">
                 <i class="bi-terminal m-auto text-primary"></i>
@@ -103,27 +108,67 @@
               </p>
             </div>
           </div>
-          <!-- Item 4 -->
-          <div class="col-lg-3 col-md-6 mb-5">
+          <!-- Slide 4 -->
+          <div class="carousel-item">
             <div class="features-icons-item mx-auto mb-0 mb-lg-3">
               <div class="features-icons-icon d-flex">
                 <i class="bi-gear m-auto text-primary"></i>
-                <!-- Alterei o ícone para diversificar -->
               </div>
               <h3>QUALIDADE DE VIDA</h3>
-              <p class="lead mb-0">Na Fupii você corre menos e lucra mais</p>
+              <p class="lead mb-0">
+                Na Fupii, você corre menos e lucra mais. Tendo mais tempo para
+                aproveitar com sua família.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Call to Action-->
-    <section class="call-to-action text-white text-center" id="signup">
-      <div class="container position-relative">
-        <div class="row justify-content-center">
-          <div class="col-xl-6">
-            <h2 class="mb-4">Pronto para ser mais um parceiro?</h2>
-          </div>
+        <!-- Controles do Carrossel -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#featuresCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#featuresCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+        <!-- Indicadores -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#featuresCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#featuresCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#featuresCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#featuresCarousel"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
         </div>
       </div>
     </section>
@@ -140,6 +185,7 @@
               id="cadastroForm"
               action="save_motorista.php"
               method="POST"
+              novalidate
             >
               <!-- 1. Informações Básicas -->
               <div class="mb-4">
@@ -152,6 +198,7 @@
                   placeholder="Seu nome completo"
                   required
                 />
+                <div class="invalid-feedback">O nome é obrigatório.</div>
               </div>
 
               <div class="mb-4">
@@ -161,9 +208,13 @@
                   id="whatsapp"
                   name="whatsapp"
                   type="tel"
+                  pattern="\d{10,11}"
                   placeholder="Seu número de WhatsApp"
                   required
                 />
+                <div class="invalid-feedback">
+                  O WhatsApp é obrigatório e deve conter 10 ou 11 dígitos.
+                </div>
               </div>
 
               <div class="mb-4">
@@ -178,6 +229,9 @@
                   placeholder="Modelo do seu veículo"
                   required
                 />
+                <div class="invalid-feedback">
+                  O modelo do veículo é obrigatório.
+                </div>
               </div>
 
               <div class="mb-4">
@@ -193,17 +247,12 @@
                   min="2015"
                   required
                 />
+                <div class="invalid-feedback">
+                  O ano do veículo deve ser 2015 ou superior.
+                </div>
               </div>
 
-              <!-- 2. Perguntas de Qualificação -->
-              <div class="mb-4">
-                <h4>
-                  A Fupii preza por qualidade, compromisso e respeito. Responda
-                  as perguntas abaixo para que possamos conhecer você melhor e
-                  construir uma parceria de sucesso!
-                </h4>
-              </div>
-
+              <!-- Perguntas de Qualificação -->
               <div class="mb-4">
                 <label class="form-label"
                   >Você já tem experiência como motorista de aplicativo?</label
@@ -233,6 +282,9 @@
                   <label class="form-check-label" for="experiencia-nao"
                     >Não</label
                   >
+                </div>
+                <div class="invalid-feedback">
+                  Por favor, selecione uma opção.
                 </div>
               </div>
 
@@ -266,31 +318,45 @@
                     >Alugado</label
                   >
                 </div>
+                <div class="invalid-feedback">
+                  Por favor, selecione uma opção.
+                </div>
               </div>
 
               <!-- 3. Termos e Concordância -->
               <div class="mb-4">
                 <h5>Você concorda com os requisitos da Fupii?</h5>
-                <ul class="list-unstyled ms-3">
-                  <li>• Cumprir as normas de trânsito</li>
-                  <li>
-                    • Realizar vistoria gratuita do seu veículo em nossa sede
-                  </li>
-                  <li>
-                    • Apresentar-se bem para o trabalho (calça e camisa de
-                    manga)
-                  </li>
-                  <li>
-                    • Prestar um bom atendimento para ser bem avaliado e ganhar
-                    prêmios
-                  </li>
-                  <li>
-                    • Realizar treinamento online para aprimorar o atendimento
-                  </li>
-                  <li>
-                    • Ser nosso parceiro e ganhar ao indicar novos clientes
-                  </li>
-                </ul>
+                <div class="card bg-black p-3">
+                  <ul class="list-unstyled ms-3 mb-0">
+                    <li class="mb-2">
+                      <i class="bi-check-circle text-success me-2"></i>
+                      Cumprir as normas de trânsito
+                    </li>
+                    <li class="mb-2">
+                      <i class="bi-check-circle text-success me-2"></i>
+                      Realizar vistoria gratuita do seu veículo em nossa sede
+                    </li>
+                    <li class="mb-2">
+                      <i class="bi-check-circle text-success me-2"></i>
+                      Apresentar-se bem para o trabalho (calça e camisa de
+                      manga)
+                    </li>
+                    <li class="mb-2">
+                      <i class="bi-check-circle text-success me-2"></i>
+                      Prestar um bom atendimento para ser bem avaliado e ganhar
+                      prêmios
+                    </li>
+                    <li class="mb-2">
+                      <i class="bi-check-circle text-success me-2"></i>
+                      Realizar treinamento online para aprimorar o atendimento
+                    </li>
+                    <li>
+                      <i class="bi-check-circle text-success me-2"></i>
+                      Ser nosso parceiro e ganhar ao indicar novos clientes
+                    </li>
+                  </ul>
+                </div>
+
                 <div class="form-check mt-3">
                   <input
                     class="form-check-input"
@@ -311,7 +377,7 @@
                 </div>
               </div>
 
-              <!-- 4. Chamada para Ação -->
+              <!-- Botão de Envio -->
               <div class="text-center">
                 <button
                   class="btn btn-primary btn-lg"
@@ -328,27 +394,44 @@
       </div>
     </section>
 
-    <!-- Script JavaScript para Envio AJAX -->
+    <!-- Script JavaScript para Envio AJAX e Validação -->
     <script>
+      // Função para validação do formulário
+      (function () {
+        "use strict";
+        const form = document.getElementById("cadastroForm");
+        form.addEventListener("submit", function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add("was-validated");
+        });
+      })();
+
+      // Função para enviar o formulário via AJAX e mostrar feedback no botão
       function submitForm() {
         const button = document.getElementById("submitButtonForm");
-        const originalText = button.innerHTML;
+        const form = document.getElementById("cadastroForm");
 
-        // Altera o botão para mostrar que está enviando e desativa ele
+        // Verificar se o formulário é válido antes de enviar
+        if (!form.checkValidity()) {
+          form.classList.add("was-validated");
+          return;
+        }
+
         button.innerHTML = "Enviando...";
         button.disabled = true;
 
-        // Cria um objeto FormData com os dados do formulário
-        const formData = new FormData(document.getElementById("cadastroForm"));
+        // Cria o objeto FormData com os dados do formulário
+        const formData = new FormData(form);
 
-        // Envia o formulário via AJAX com fetch
         fetch("save_motorista.php", {
           method: "POST",
           body: formData,
         })
           .then((response) => response.text())
           .then((result) => {
-            // Verifica o resultado para determinar sucesso ou erro
             if (result.includes("sucesso")) {
               button.innerHTML = "Cadastro realizado com sucesso!";
               button.classList.remove("btn-primary");
@@ -363,15 +446,6 @@
             button.innerHTML = "Erro ao enviar. Tente novamente.";
             button.classList.remove("btn-primary");
             button.classList.add("btn-danger");
-          })
-          .finally(() => {
-            // Restaura o botão ao estado original após 3 segundos
-            setTimeout(() => {
-              button.innerHTML = originalText;
-              button.classList.remove("btn-success", "btn-danger");
-              button.classList.add("btn-primary");
-              button.disabled = false;
-            }, 3000); // Tempo de 3 segundos para exibir a mensagem de sucesso ou erro
           });
       }
     </script>
