@@ -1,5 +1,3 @@
-Aqui está um README completo e otimizado para sua landing page. Esse arquivo segue os melhores padrões de documentação para repositórios no GitHub, utilizando emojis, uma estrutura clara, e linguagem amigável para uma apresentação mais atraente.
-
 # 🚖 Fupii - Landing Page para Motoristas
 
 Bem-vindo ao repositório da **Landing Page do Fupii** 🚀, uma plataforma de cadastro para motoristas. Este projeto foi desenvolvido com foco em UX/UI para oferecer uma experiência intuitiva e visualmente atraente. 
