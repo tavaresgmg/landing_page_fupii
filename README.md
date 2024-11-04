@@ -76,5 +76,3 @@ Você pode abrir diretamente em um navegador ou usar uma extensão como Live Ser
 Contribuições são bem-vindas! Se você encontrou algum problema ou tem alguma sugestão, por favor, abra uma issue ou envie um pull request.
 
 Fupii - Cadastre-se e comece a lucrar hoje! 🚗💨
-
-Esse README cobre as funcionalidades principais e explica a estrutura do projeto, com links e instruções para rodar localmente, além de sugestões de melhoria. A formatação em Markdown com emojis facilita a leitura e torna o repositório mais atrativo!
