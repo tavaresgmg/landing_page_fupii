@@ -1,7 +1,20 @@
-/*!
-* Start Bootstrap - Landing Page v6.0.6 (https://startbootstrap.com/theme/landing-page)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-landing-page/blob/master/LICENSE)
-*/
-// This file is intentionally blank
-// Use this file to add JavaScript to your project
+document.addEventListener("DOMContentLoaded", function () {
+  const slider = document.getElementById("slider");
+  const overlay = document.querySelector(".comparison-overlay");
+  let isDragging = false;
+
+  slider.addEventListener("mousedown", () => (isDragging = true));
+  window.addEventListener("mouseup", () => (isDragging = false));
+
+  window.addEventListener("mousemove", (e) => {
+    if (!isDragging) return;
+
+    const rect = overlay.parentNode.getBoundingClientRect();
+    let position = e.clientX - rect.left;
+    if (position < 0) position = 0;
+    if (position > rect.width) position = rect.width;
+
+    slider.style.left = `${position}px`;
+    overlay.style.width = `${position}px`;
+  });
+});
