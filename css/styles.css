@@ -88,17 +88,24 @@
   --bs-highlight-bg: #fff3cd;
 }
 
+/* Configurações globais e box-sizing */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+/* Fonte personalizada */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;700&display=swap");
+
+/* Configurações de comportamento suave */
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
   }
 }
+
+/* Animação de entrada para os campos */
 .form-cadastro .mb-4 {
   opacity: 0;
   transform: translateY(20px);
@@ -106,64 +113,79 @@
   animation-delay: 0.3s;
 }
 
-
-
-/* Fonte personalizada */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;700&display=swap");
-
-/* Título principal */
+/* Estilo do cabeçalho principal */
 .masthead h1 {
   font-family: "Poppins", sans-serif;
   font-size: 3rem;
   color: #ffffff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 4px rgba(0, 14, 134, 0.5); /* Sombras azuladas */
   animation: fadeIn 2s ease-in-out;
   margin-bottom: 20px;
 }
 
-/* Subtítulo */
+/* Subtítulo com maior visibilidade */
 .masthead h2 {
   font-family: "Roboto", sans-serif;
   font-size: 1.8rem;
-  color: #ffdd57;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  background-color: rgba(
+    0,
+    14,
+    134,
+    0.8
+  ); /* Fundo semi-transparente azul escuro */
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombras mais escuras para contraste */
   margin-bottom: 15px;
   animation: fadeIn 2.5s ease-in-out;
+  display: inline-block;
 }
 
-/* Destaque de benefícios */
+/* Destaque de benefícios com efeito de brilho contínuo */
 .masthead h3 {
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   color: #ffffff;
   background: linear-gradient(
     90deg,
-    rgba(255, 221, 87, 0.7),
-    rgba(255, 165, 0, 0.7)
+    rgba(0, 14, 134, 0.8),
+    rgba(0, 0, 120, 0.8)
   );
-  padding: 10px;
-  border-radius: 5px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-  animation: highlightText 3s infinite alternate;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
   display: inline-block;
   margin-bottom: 20px;
+  background-size: 200% 200%;
+  animation: gradientShift 5s linear infinite;
 }
 
-/* Botão de ação com animação de brilho */
+/* Animação de brilho sutil */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Botão de ação com efeito de brilho */
 .btn-pulse {
   font-size: 1.2rem;
   font-weight: bold;
   padding: 12px 30px;
-  background-color: #ff7a00;
+  background-color: #000e86; /* Tom de azul */
   border: none;
   color: #ffffff;
   border-radius: 50px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 0 10px rgba(255, 122, 0, 0.6);
+  box-shadow: 0 0 10px rgba(0, 14, 134, 0.6); /* Brilho azul */
 }
 .btn-pulse:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(255, 122, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 14, 134, 0.8); /* Brilho ao hover */
 }
 
 /* Animações */
@@ -181,11 +203,85 @@
 @keyframes highlightText {
   0% {
     color: #ffffff;
-    background-color: rgba(255, 165, 0, 0.7);
+    background-color: rgba(0, 14, 134, 0.7);
   }
   100% {
-    color: #ffdd57;
-    background-color: rgba(255, 140, 0, 0.9);
+    color: #000e86;
+    background-color: rgba(0, 0, 128, 0.9);
+  }
+}
+
+/* Estilo da seção de cadastro */
+#cadastro-parceiro {
+  background-image: url("/assets/img/bg-masthead.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo azul escuro com opacidade */
+  color: #ffffff;
+}
+
+/* Título da seção de cadastro */
+#cadastro-parceiro h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Campos de entrada */
+.form-control-lg {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid #000e86; /* Bordas azul */
+  transition: 0.3s;
+}
+
+.form-control-lg:focus {
+  border-color: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 14, 134, 0.8);
+}
+
+/* Lista de termos */
+.card.bg-black {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid #ffffff;
+}
+.card.bg-black ul li i {
+  color: #09b944;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Classe personalizada para o botão */
+.btn-glow {
+  color: #ffffff; /* Texto sempre branco */
+  background-color: #000e86; /* Fundo azul */
+  border: 2px solid #000e86; /* Borda azul */
+  border-radius: 25px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* Leve brilho no texto */
+  box-shadow: 0 0 15px rgba(0, 14, 134, 0.6); /* Brilho azul ao redor */
+  transition: box-shadow 0.3s ease, text-shadow 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-glow:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1); /* Intensifica o brilho no hover */
+  box-shadow: 0 0 30px rgba(0, 14, 134, 0.9); /* Brilho mais forte no hover */
+  transform: scale(1.05); /* Leve zoom ao passar o mouse */
+}
+
+/* Animações de entrada */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
