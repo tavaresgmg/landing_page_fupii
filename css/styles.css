@@ -96,7 +96,11 @@
 }
 
 /* Fonte personalizada */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+*{
+  font-family: "Inter", sans-serif;
+}
 
 /* Configurações de comportamento suave */
 @media (prefers-reduced-motion: no-preference) {
@@ -115,7 +119,7 @@
 
 /* Estilo do cabeçalho principal */
 .masthead h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 3rem;
   color: #ffffff;
   text-shadow: 2px 2px 4px rgba(0, 14, 134, 0.5); /* Sombras azuladas */
@@ -125,7 +129,7 @@
 
 /* Subtítulo com maior visibilidade */
 .masthead h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.8rem;
   color: #ffffff;
   background-color: rgba(
@@ -144,7 +148,7 @@
 
 /* Destaque de benefícios com efeito de brilho contínuo */
 .masthead h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   color: #ffffff;
   background: linear-gradient(
