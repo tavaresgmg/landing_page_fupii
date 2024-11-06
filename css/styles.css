@@ -98,7 +98,7 @@
 /* Fonte personalizada */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-*{
+* {
   font-family: "Inter", sans-serif;
 }
 
@@ -215,14 +215,31 @@
   }
 }
 
-/* Estilo da seção de cadastro */
 #cadastro-parceiro {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo com opacidade */
+  color: #ffffff;
+  overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites */
+}
+
+#cadastro-parceiro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-image: url("/assets/img/bg-masthead.jpg");
   background-size: cover;
   background-position: center;
-  background-blend-mode: darken;
-  background-color: rgba(0, 0, 0, 0.8); /* Fundo azul escuro com opacidade */
-  color: #ffffff;
+  filter: grayscale(80%); /* Aplica o filtro apenas à imagem */
+  z-index: 1;
+  opacity: 0.8; /* Controle da opacidade da imagem */
+}
+
+#cadastro-parceiro * {
+  position: relative;
+  z-index: 2; /* Garante que o conteúdo apareça acima da imagem */
 }
 
 /* Título da seção de cadastro */
