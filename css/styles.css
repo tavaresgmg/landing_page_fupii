@@ -11402,7 +11402,7 @@ header.masthead {
   background: url("../assets/img/bg-herosection.png") no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
 }
 header.masthead h1,
 header.masthead .h1 {
@@ -11410,7 +11410,7 @@ header.masthead .h1 {
 }
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 12rem;
+    padding-top: 11rem;
     padding-bottom: 12rem;
   }
   header.masthead h1,
