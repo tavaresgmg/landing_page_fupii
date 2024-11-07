@@ -287,7 +287,14 @@
 
           <!-- Botão de Envio -->
           <div class="text-center">
-            <button class="btn-glow w-100" id="submitButtonForm" type="button" onclick="submitForm()">Enviar Cadastro Fupii</button>
+            <button
+              class="btn-glow w-100"
+              id="submitButtonForm"
+              type="submit"
+              onclick="submitForm(event)"
+            >
+              Enviar Cadastro Fupii
+            </button>
           </div>
         </form>
       </div>
@@ -298,7 +305,9 @@
     <!-- Script JavaScript para Envio AJAX e Validação -->
 <script>
   // Função para validação e envio do formulário
-  function submitForm() {
+  function submitForm(event) {
+  event.preventDefault(); // Impede o envio padrão do formulário
+
     const button = document.getElementById("submitButtonForm");
     const form = document.getElementById("cadastroForm");
 
