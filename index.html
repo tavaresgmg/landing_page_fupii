@@ -32,8 +32,7 @@
     />
     <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
 
-    <!-- Meta Pixel-->
-    [04/11/24, 15:36:16] ~ Murilo - MRA MÍDIAS: <!-- Meta Pixel Code -->
+    <!-- Meta Pixel-->      
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -51,171 +50,137 @@
     /></noscript>
     <!-- End Meta Pixel Code -->
 
-  </head>
+  </head>                                                                                                                                                                                                                                                                   
   <body>
     <!-- Navigation-->
-    <nav class="navbar navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-light absolute m-0 p-0" style="height: 0px; z-index: 2;">
       <div class="container d-flex justify-content-center">
         <a class="navbar-brand" href="#!">
-          <img src="/assets/logo.png" alt="Fupii Logo" style="height: 50px" />
+          <img class="pt-4" src="./assets/logo-twhite.png" alt="Fupii Logo" style="width: 104px" />
         </a>
       </div>
     </nav>
+    
     <!-- Masthead-->
     <header class="masthead">
-      <div class="container position-relative">
-        <div class="row justify-content-center">
-          <div class="col-xl-6">
-            <div class="text-center text-white">
-              <!-- Page heading-->
-              <h1 class="mb-5">Goiânia agora é Fupii!</h1>
-              <h2 class="mb-3">
-                Lucre de verdade com a Fupii!
-              <h3 class="mb-3">
-                91% do lucro das corridas ficam no
-                seu bolso e você ainda tem um clube de benefícios com +10 mil
-                pontos de descontos!
-              </h3>
-              <button
-                class="btn btn-primary btn-lg btn-pulse"
-                id="submitButtonMasthead"
-                type="button"
-                onclick="scrollToForm()"
-              >
-                Quero ser Fupii
-              </button>
+      <div class="container">
+        <div class="row" style="width: 100%; margin: 0;">
+          <!-- Coluna 1 para Desktop (70%) -->
+          <div class="col-9 d-none d-md-block" style="padding: 0;">
+            <div>
+              <!-- Conteúdo da col1 (pode adicionar conteúdo aqui) -->
             </div>
+          </div>
+    
+          <!-- Coluna 2 para Desktop e Mobile -->
+          <div class="col-3 text-left text-white">
+            <p style="color: #3F4DA1;">Lucre de verdade com a Fupii!</p>
+            <h1 class="mb-1">Goiânia agora é Fupii!</h1>
+            <p style="color: #B3B7D0;">
+              91% do lucro das corridas ficam no seu bolso e você ainda tem um clube de benefícios com +10 mil pontos de descontos!
+            </p>
+            <button
+              class="btn btn-primary btn-lg"
+              id="submitButtonMasthead"
+              type="button"
+              onclick="scrollToForm()"
+            >
+              Quero ser Fupii
+            </button>
           </div>
         </div>
       </div>
     </header>
-    <!-- Carrossel de Benefícios usando Bootstrap -->
-    <section class="features-icons bg-light text-center">
-      <h2 class="mb-4 text-center">Benefícios da Fupii</h2>
-      <div
-        id="featuresCarousel"
-        class="carousel slide"
-        data-bs-ride="carousel"
-        data-bs-interval="6000"
-      >
-        <div class="carousel-inner">
-          <!-- Slide 1 -->
-          <div class="carousel-item active">
-            <div class="d-flex justify-content-center">
-              <img
-                src="assets/img/ben1.png"
-                alt="Benefício 1"
-                class="img-fluid"
-                style="max-height: 500px"
-              />
-            </div>
-          </div>
-          <!-- Slide 2 -->
-          <div class="carousel-item">
-            <div class="d-flex justify-content-center">
-              <img
-                src="assets/img/ben2.png"
-                alt="Benefício 2"
-                class="img-fluid"
-                style="max-height: 500px"
-              />
-            </div>
-          </div>
-          <!-- Slide 3 -->
-          <div class="carousel-item">
-            <div class="d-flex justify-content-center">
-              <img
-                src="assets/img/ben3.png"
-                alt="Benefício 3"
-                class="img-fluid"
-                style="max-height: 500px"
-              />
-            </div>
-          </div>
-          <!-- Slide 4 -->
-          <div class="carousel-item">
-            <div class="d-flex justify-content-center">
-              <img
-                src="assets/img/ben4.png"
-                alt="Benefício 4"
-                class="img-fluid"
-                style="max-height: 500px"
-              />
-            </div>
-          </div>
-        </div>
-        <!-- Controles do Carrossel -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#featuresCarousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#featuresCarousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Próximo</span>
-        </button>
-        <!-- Indicadores -->
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#featuresCarousel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#featuresCarousel"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#featuresCarousel"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#featuresCarousel"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-        </div>
-      </div>
-    </section>
 
-    <!-- Seção de Comparação de Imagens -->
-    <section class="image-comparison-section bg-light text-center py-5">
-      <div class="container">
-        <h2 class="mb-4">Fupii vs Concorrência</h2>
-        <div
-          class="juxtapose"
-          style="width: 100%; max-width: 700px; margin: auto"
-        >
-          <img
-            src="/assets/img/comp1.png"
-            data-label="Fupii"
-            alt="Imagem Antes"
-          />
-          <img
-            src="/assets/img/comp2.png"
-            data-label="Concorrente"
-            alt="Imagem Depois"
-          />
+
+
+    <section class="container py-5">
+      <div>
+        <h1 class="text-center mb-4">Benefícios da Fupii</h1>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 d-flex">
+            <div class="benefit-card border p-3 rounded-4 w-100" style="margin-bottom: 16px;">
+              <img src="/assets/img/icon-valorizado.svg" class="benefit-icon" alt="">
+              <h3>Motorista valorizado</h3>
+              <p>Na Fupii, cada parceiro é parte essencial da nossa jornada. Aqui, você encontra respeito, suporte e uma parceria que valoriza o seu trabalho.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 d-flex">
+            <div class="benefit-card border p-3 rounded-4 w-100" style="margin-bottom: 16px;">
+              <img src="/assets/img/icon-beneficios.svg" class="benefit-icon" alt="">
+              <h3>Clube benefícios</h3>
+              <p>Na Fupii, você conta com +10 mil pontos de descontos para você economizar no seu dia a dia.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 d-flex">
+            <div class="benefit-card border p-3 rounded-4 w-100" style="margin-bottom: 16px;">
+              <img src="/assets/img/icon-qualidade.svg" class="benefit-icon" alt="">
+              <h3>Qualidade de vida</h3>
+              <p>Na Fupii você corre menos e lucra mais. Tendo mais tempo para aproveitar com sua família!</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 d-flex">
+            <div class="benefit-card border p-3 rounded-4 w-100" style="margin-bottom: 16px;">
+              <img src="/assets/img/icon-lucro.svg" class="benefit-icon" alt="">
+              <h3>Mais lucro no seu bolso</h3>
+              <p>Fique com 91% do valor das suas viagens e garanta uma renda extra ao indicar passageiros para nossa plataforma.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    
+    
+    
+    
+
+
+
+
+   
+    <!-- Seção de Comparação de Imagens -->
+    <section class="container mb-5">
+      <div class="row align-items-center">
+        
+        <!-- Coluna de Imagem (à esquerda no desktop) -->
+        <div class="col-12 col-md-6 order-md-1 d-flex justify-content-center mb-4">
+          <div class="juxtapose" style="width: 100% !important;">
+            <img src="/assets/img/comp1.png" data-label="Fupii" alt="Imagem Antes" />
+            <img src="/assets/img/comp2.png" data-label="Concorrente" alt="Imagem Depois" />
+          </div>
+        </div>
+    
+        <!-- Coluna de Texto (à direita no desktop) -->
+        <div class="col-12 col-md-6 order-md-2 text-center text-md-start">
+          <h2 class="mb-0">Fupii vs Concorrência</h2>
+          <p>Arraste a imagem para os lados e revele a comparação.</p>
+          
+          
+          <div class="d-flex flex-column align-items-center align-items-md-start gap-2 p-4 rounded-5" style="background-color: #E6E8F4;">
+            <p class="mb-0" style="font-weight: 600;">Aqui na Fupii você tem:</p>
+            <span class="d-inline-flex align-items-center gap-2">
+              <img class="mr-2" src="assets/img/icon-check.svg" alt="">
+              <p class="mb-0" style="color: #001489;">Taxa justa</p>
+            </span>
+            <span class="d-inline-flex align-items-center gap-2">
+              <img class="mr-2" src="assets/img/icon-check.svg" alt="">
+              <p class="mb-0" style="color: #001489;">Suporte humanizado</p>
+            </span>
+            <span class="d-inline-flex align-items-center gap-2">
+              <img class="mr-2" src="assets/img/icon-check.svg" alt="">
+              <p class="mb-0" style="color: #001489;">Descontos e benefícios</p>
+            </span>
+            <span class="d-inline-flex align-items-center gap-2">
+              <img class="mr-2" src="assets/img/icon-check.svg" alt="">
+              <p class="mb-0" style="color: #001489;">Várias formas de lucrar</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
 
     <!-- jQuery, Bootstrap JS e Juxtapose JS -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -232,10 +197,10 @@
     <!-- Cadastro Parceiro -->
 <section id="cadastro-parceiro" class="py-5 text-white" data-aos="fade-up" data-aos-duration="1000">
 
-  <div class="container-fluid px-0">
-    <div class="row justify-content-center">
+  <div class="container">
+    <div class="justify-content-center">
       <div class="col-lg-10">
-        <h2 class="mb-4 text-center">Cadastre-se e garanta sua vaga</h2>
+        <h2 class="mb-4">Cadastre-se e garanta sua vaga</h2>
 
         <!-- Formulário de Cadastro -->
         <form class="form-cadastro" id="cadastroForm" action="save_motorista.php" method="POST" novalidate>
@@ -244,7 +209,6 @@
           <div class="mb-4">
             <label for="nome" class="form-label">Nome</label>
             <div class="input-group">
-              <span class="input-group-text"><i class="bi bi-person"></i></span>
               <input class="form-control form-control-lg" id="nome" name="nome" type="text" placeholder="Seu nome completo" required />
             </div>
             <div class="invalid-feedback">O nome é obrigatório.</div>
@@ -253,7 +217,6 @@
           <div class="mb-4">
             <label for="whatsapp" class="form-label">WhatsApp</label>
             <div class="input-group">
-              <span class="input-group-text"><i class="bi bi-whatsapp"></i></span>
               <input class="form-control form-control-lg" id="whatsapp" name="whatsapp" type="tel" pattern="\d{10,11}" placeholder="Seu número de WhatsApp" required />
             </div>
             <div class="invalid-feedback">O WhatsApp é obrigatório e deve conter 10 ou 11 dígitos.</div>
@@ -262,12 +225,6 @@
           <div class="mb-4">
             <label for="modelo-veiculo" class="form-label">Modelo do carro</label>
             <div class="input-group">
-              <span class="input-group-text">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-car-front" viewBox="0 0 16 16">
-                  <path d="M4 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0m10 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2zM4.862 4.276 3.906 6.19a.51.51 0 0 0 .497.731c.91-.073 2.35-.17 3.597-.17s2.688.097 3.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 10.691 4H5.309a.5.5 0 0 0-.447.276"/>
-                  <path d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679q.05.242.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.8.8 0 0 0 .381-.404l.792-1.848ZM4.82 3a1.5 1.5 0 0 0-1.379.91l-.792 1.847a1.8 1.8 0 0 1-.853.904.8.8 0 0 0-.43.564L1.03 8.904a1.5 1.5 0 0 0-.03.294v.413c0 .796.62 1.448 1.408 1.484 1.555.07 3.786.155 5.592.155s4.037-.084 5.592-.155A1.48 1.48 0 0 0 15 9.611v-.413q0-.148-.03-.294l-.335-1.68a.8.8 0 0 0-.43-.563 1.8 1.8 0 0 1-.853-.904l-.792-1.848A1.5 1.5 0 0 0 11.18 3z"/>
-                </svg>
-              </span>
               <input class="form-control form-control-lg" id="modelo-veiculo" name="modelo" type="text" placeholder="Modelo do seu carro" required />
             </div>
             <div class="invalid-feedback">O modelo do carro é obrigatório.</div>
@@ -276,7 +233,6 @@
           <div class="mb-4">
             <label for="ano-veiculo" class="form-label">Ano do carro (mínimo 2015)</label>
             <div class="input-group">
-              <span class="input-group-text"><i class="bi bi-calendar3"></i></span>
               <input class="form-control form-control-lg" id="ano-veiculo" name="ano" type="number" placeholder="Ano de fabricação" min="2015" required />
             </div>
             <div class="invalid-feedback">O ano do veículo deve ser 2015 ou superior.</div>
@@ -312,7 +268,7 @@
           <!-- 3. Termos e Concordância -->
           <div class="mb-4">
             <h5>Você concorda com os requisitos da Fupii?</h5>
-            <div class="card bg-black p-3">
+            <div class="card p-3">
               <ul class="list-unstyled ms-3 mb-0">
                 <li class="mb-2"><i class="bi bi-check-circle me-2"></i> Cumprir as normas de trânsito</li>
                 <li class="mb-2"><i class="bi bi-check-circle me-2"></i> Realizar vistoria gratuita do seu veículo em nossa sede</li>
@@ -331,7 +287,7 @@
 
           <!-- Botão de Envio -->
           <div class="text-center">
-            <button class="btn-glow" id="submitButtonForm" type="button" onclick="submitForm()">Enviar Cadastro Fupii</button>
+            <button class="btn-glow w-100" id="submitButtonForm" type="button" onclick="submitForm()">Enviar Cadastro Fupii</button>
           </div>
         </form>
       </div>

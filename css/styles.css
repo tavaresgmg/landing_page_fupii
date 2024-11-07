@@ -229,12 +229,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("/assets/img/bg-masthead.jpg");
+  background-image: url("/assets/img/bg-form.png");
   background-size: cover;
   background-position: center;
-  filter: grayscale(80%); /* Aplica o filtro apenas à imagem */
-  z-index: 1;
-  opacity: 0.8; /* Controle da opacidade da imagem */
 }
 
 #cadastro-parceiro * {
@@ -276,13 +273,12 @@
 /* Classe personalizada para o botão */
 .btn-glow {
   color: #ffffff; /* Texto sempre branco */
-  background-color: #000e86; /* Fundo azul */
+  background-color: #FA6532; /* Fundo azul */
   border: 2px solid #000e86; /* Borda azul */
-  border-radius: 25px;
+  border-radius: 8px;
   font-size: 1.3rem;
   font-weight: bold;
   padding: 15px 30px;
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* Leve brilho no texto */
   box-shadow: 0 0 15px rgba(0, 14, 134, 0.6); /* Brilho azul ao redor */
   transition: box-shadow 0.3s ease, text-shadow 0.3s ease, transform 0.2s ease;
   cursor: pointer;
@@ -2243,7 +2239,7 @@ progress {
 .form-text {
   margin-top: 0.25rem;
   font-size: 0.875em;
-  color: #6c757d;
+  color: #8E95BD !important;
 }
 
 .form-control {
@@ -2253,10 +2249,9 @@ progress {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
+  color: #8E95BD !important;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -2275,7 +2270,7 @@ progress {
   cursor: pointer;
 }
 .form-control:focus {
-  color: #212529;
+  color: #8E95BD !important;;
   background-color: #fff;
   border-color: #86b7fe;
   outline: 0;
@@ -2285,11 +2280,11 @@ progress {
   height: 1.5em;
 }
 .form-control::-moz-placeholder {
-  color: #6c757d;
+  color: #8E95BD !important;
   opacity: 1;
 }
 .form-control::placeholder {
-  color: #6c757d;
+  color: #8E95BD !important;
   opacity: 1;
 }
 .form-control:disabled {
@@ -3175,19 +3170,19 @@ fieldset:disabled .btn {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #0d6efd;
-  --bs-btn-border-color: #0d6efd;
+  --bs-btn-bg: #FA6532;
+  --bs-btn-border-color: #FA6532;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #0b5ed7;
-  --bs-btn-hover-border-color: #0a58ca;
+  --bs-btn-hover-bg: #DC4714;
+  --bs-btn-hover-border-color: #DC4714;
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #0a58ca;
-  --bs-btn-active-border-color: #0a53be;
+  --bs-btn-active-bg: #FA6532;
+  --bs-btn-active-border-color: #FA6532;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #0d6efd;
-  --bs-btn-disabled-border-color: #0d6efd;
+  --bs-btn-disabled-bg: #FA6532;
+  --bs-btn-disabled-border-color: #FA6532;
 }
 
 .btn-secondary {
@@ -4518,9 +4513,9 @@ fieldset:disabled .btn {
   min-width: 0;
   height: var(--bs-card-height);
   word-wrap: break-word;
-  background-color: var(--bs-card-bg);
+  background-color: transparent;
   background-clip: border-box;
-  border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+  border: 1px solid #4D58A5 ;
   border-radius: var(--bs-card-border-radius);
 }
 .card > hr {
@@ -11404,10 +11399,10 @@ fieldset:disabled .btn {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
+  background: url("../assets/img/bg-herosection.png") no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-bottom: 3rem;
 }
 header.masthead h1,
 header.masthead .h1 {
@@ -11472,3 +11467,114 @@ footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+
+
+
+  /* Estilo padrão da borda */
+  .benefit-card {
+    border-color: #EAEAEA !important;
+    transition: border-color 0.3s ease; /* Suaviza a transição */
+  }
+
+  /* Altera a cor da borda ao passar o mouse */
+  .benefit-card:hover {
+    border-color: #FA6532 !important;
+  }
+
+  /* Altera a cor do SVG ao passar o mouse sobre o card */
+  .benefit-card:hover .benefit-icon {
+    filter: brightness(0) saturate(100%) invert(48%) sepia(81%) saturate(1674%) hue-rotate(1deg) brightness(101%) contrast(106%);
+  }
+
+  .benefit-card p {
+    color: #3C3C3C;
+  }
+
+  .benefit-card h3 {
+    font-size: 20px;
+    margin-top: 12px;
+  }
+
+  @media (max-width: 767px) {
+    .text-center-mobile {
+      text-align: center;
+    }
+  }
+
+  <style>
+  @media (max-width: 767px) {
+    .text-md-left {
+      text-align: center;
+    }
+  }
+
+   /* Alterações apenas para telas pequenas (max-width: 767px) */
+   @media (max-width: 767px) {
+    .masthead {
+      background-image: url('../assets/img/bg-herosection-mobile.png'); /* Nova imagem de fundo para mobile */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+    }
+    
+    .masthead .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; /* Centraliza o conteúdo verticalmente em baixo */
+      align-items: center;
+      text-align: center;
+      height: 100%;
+      padding: 0 16px; /* Padding lateral de 16px */
+    }
+    
+    .masthead .col-3,
+    .masthead .col-9 {
+      width: 100%; /* Coloca o conteúdo em uma única coluna para mobile */
+      padding: 0;
+    }
+
+    #submitButtonMasthead {
+      margin-top: 20px;
+    }
+  }
+
+   /* Aplica um gap personalizado entre os elementos na row */
+   .custom-gap {
+    gap: 1.5rem; /* Defina o valor desejado para o gap (ex: 1.5rem, 24px) */
+  }
+
+  /* Aplica um gap maior em telas grandes (desktop) */
+  @media (min-width: 992px) {
+    .custom-gap {
+      gap: 2rem; /* Defina o valor desejado para o desktop */
+    }
+  }
+
+  @media (max-width: 767px) {
+    .masthead {
+      background-image: url('../assets/img/bg-herosection-mobile.png') !important; /* Nova imagem de fundo para mobile */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+    }
+    
+    .masthead .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; /* Centraliza o conteúdo verticalmente em baixo */
+      align-items: center;
+      text-align: center;
+      height: 100%;
+      padding: 0 16px; /* Padding lateral de 16px */
+    }
+    
+    .masthead .col-3,
+    .masthead .col-9 {
+      width: 100%; /* Coloca o conteúdo em uma única coluna para mobile */
+      padding: 0;
+    }
+
+    #submitButtonMasthead {
+      margin-top: 20px;
+    }
+  }
