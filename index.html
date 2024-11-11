@@ -32,53 +32,79 @@
     />
     <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
 
-    <!-- Meta Pixel-->      
+    <!-- Meta Pixel-->
     <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '576375664758358');
-    fbq('track', 'PageView');
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "576375664758358");
+      fbq("track", "PageView");
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=576375664758358&ev=PageView&noscript=1"
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=576375664758358&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
-
-  </head>                                                                                                                                                                                                                                                                   
+  </head>
   <body>
     <!-- Navigation-->
-    <nav class="navbar navbar-light absolute m-0 p-0" style="height: 0px; z-index: 2;">
+    <nav
+      class="navbar navbar-light absolute m-0 p-0"
+      style="height: 0px; z-index: 2"
+    >
       <div class="container d-flex justify-content-center">
         <a class="navbar-brand" href="#!">
-          <img class="pt-4" src="./assets/logo-2.png" alt="Fupii Logo" style="width: 104px" />
+          <img
+            class="pt-4"
+            src="./assets/logo-2.png"
+            alt="Fupii Logo"
+            style="width: 104px"
+          />
         </a>
       </div>
     </nav>
-    
+
     <!-- Masthead-->
     <header class="masthead" style="min-height: 640px">
       <div class="container">
-        <div class="row" style="width: 100%; margin: 0;">
-          
+        <div class="row" style="width: 100%; margin: 0">
           <!-- Coluna 1 para Desktop apenas -->
-          <div class="col-6 d-none d-md-block" style="padding: 0;">
+          <div class="col-6 d-none d-md-block" style="padding: 0">
             <div>
               <!-- Conteúdo da col1 (pode adicionar conteúdo aqui) -->
             </div>
           </div>
-          
+
           <!-- Coluna 2 para Desktop e Mobile -->
           <div class="col-12 col-md-6 text-left text-white">
-            <p style="color: #3F4DA1;">Lucre de verdade com a Fupii!</p>
+            <p style="color: #3f4da1">Lucre de verdade com a Fupii!</p>
             <h1 class="mb-1">Goiânia agora é Fupii!</h1>
-            <p style="color: #B3B7D0;">
-              91% do lucro das corridas ficam no seu bolso e você ainda tem um clube de benefícios com +10 mil pontos de descontos!
+            <p style="color: #b3b7d0">
+              91% do lucro das corridas ficam no seu bolso e você ainda tem um
+              clube de benefícios com +10 mil pontos de descontos!
             </p>
             <button
               class="btn btn-primary btn-lg"
@@ -89,101 +115,138 @@
               Quero ser Fupii
             </button>
           </div>
-          
         </div>
       </div>
     </header>
-    
-
-
 
     <section class="container py-5">
       <div>
         <h1 class="text-center mb-4">Benefícios da Fupii</h1>
         <div class="row">
           <div class="col-12 col-md-6 col-lg-3 d-flex">
-            <div class="benefit-card border p-3 rounded-4 w-100" style="margin-bottom: 16px;">
-              <img src="/assets/img/icon-valorizado.svg" class="benefit-icon" alt="">
+            <div
+              class="benefit-card border p-3 rounded-4 w-100"
+              style="margin-bottom: 16px"
+            >
+              <img
+                src="/assets/img/icon-valorizado.svg"
+                class="benefit-icon"
+                alt=""
+              />
               <h3>Motorista valorizado</h3>
-              <p>Na Fupii, cada parceiro é parte essencial da nossa jornada. Aqui, você encontra respeito, suporte e uma parceria que valoriza o seu trabalho.</p>
+              <p>
+                Na Fupii, cada parceiro é parte essencial da nossa jornada.
+                Aqui, você encontra respeito, suporte e uma parceria que
+                valoriza o seu trabalho.
+              </p>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 d-flex">
-            <div class="benefit-card border p-3 rounded-4 w-100" style="margin-bottom: 16px;">
-              <img src="/assets/img/icon-beneficios.svg" class="benefit-icon" alt="">
+            <div
+              class="benefit-card border p-3 rounded-4 w-100"
+              style="margin-bottom: 16px"
+            >
+              <img
+                src="/assets/img/icon-beneficios.svg"
+                class="benefit-icon"
+                alt=""
+              />
               <h3>Clube de benefícios</h3>
-              <p>Na Fupii, você conta com +10 mil pontos de descontos para você economizar no seu dia a dia.</p>
+              <p>
+                Na Fupii, você conta com +10 mil pontos de descontos para você
+                economizar no seu dia a dia.
+              </p>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 d-flex">
-            <div class="benefit-card border p-3 rounded-4 w-100" style="margin-bottom: 16px;">
-              <img src="/assets/img/icon-qualidade.svg" class="benefit-icon" alt="">
+            <div
+              class="benefit-card border p-3 rounded-4 w-100"
+              style="margin-bottom: 16px"
+            >
+              <img
+                src="/assets/img/icon-qualidade.svg"
+                class="benefit-icon"
+                alt=""
+              />
               <h3>Qualidade de vida</h3>
-              <p>Na Fupii você corre menos e lucra mais. Tendo mais tempo para aproveitar com sua família!</p>
+              <p>
+                Na Fupii você corre menos e lucra mais. Tendo mais tempo para
+                aproveitar com sua família!
+              </p>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 d-flex">
-            <div class="benefit-card border p-3 rounded-4 w-100" style="margin-bottom: 16px;">
-              <img src="/assets/img/icon-lucro.svg" class="benefit-icon" alt="">
+            <div
+              class="benefit-card border p-3 rounded-4 w-100"
+              style="margin-bottom: 16px"
+            >
+              <img
+                src="/assets/img/icon-lucro.svg"
+                class="benefit-icon"
+                alt=""
+              />
               <h3>Mais lucro no seu bolso</h3>
-              <p>Fique com 91% do valor das suas viagens e garanta uma renda extra ao indicar passageiros para nossa plataforma.</p>
+              <p>
+                Fique com 91% do valor das suas viagens e garanta uma renda
+                extra ao indicar passageiros para nossa plataforma.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    
-    
-    
-    
 
-
-
-
-   
     <!-- Seção de Comparação de Imagens -->
     <section class="container mb-5">
       <div class="row align-items-center">
-        
         <!-- Coluna de Imagem (à esquerda no desktop) -->
-        <div class="col-12 col-md-6 order-md-1 d-flex justify-content-center mb-4">
-          <div class="juxtapose" style="width: 100% !important;">
-            <img src="/assets/img/comp1.png" data-label="Fupii" alt="Imagem Antes" />
-            <img src="/assets/img/comp2.png" data-label="Concorrente" alt="Imagem Depois" />
+        <div
+          class="col-12 col-md-6 order-md-1 d-flex justify-content-center mb-4"
+        >
+          <div class="juxtapose" style="width: 100% !important">
+            <img
+              src="/assets/img/comp1.png"
+              data-label="Fupii"
+              alt="Imagem Antes"
+            />
+            <img
+              src="/assets/img/comp2.png"
+              data-label="Concorrente"
+              alt="Imagem Depois"
+            />
           </div>
         </div>
-    
+
         <!-- Coluna de Texto (à direita no desktop) -->
         <div class="col-12 col-md-6 order-md-2 text-center text-md-start">
           <h2 class="mb-0">Fupii vs Concorrência</h2>
           <p>Arraste a imagem para os lados e revele a comparação.</p>
-          
-          
-          <div class="d-flex flex-column align-items-center align-items-md-start gap-2 p-4 rounded-5" style="background-color: #E6E8F4;">
-            <p class="mb-0" style="font-weight: 600;">Aqui na Fupii você tem:</p>
+
+          <div
+            class="d-flex flex-column align-items-center align-items-md-start gap-2 p-4 rounded-5"
+            style="background-color: #e6e8f4"
+          >
+            <p class="mb-0" style="font-weight: 600">Aqui na Fupii você tem:</p>
             <span class="d-inline-flex align-items-center gap-2">
-              <img class="mr-2" src="assets/img/icon-check.svg" alt="">
-              <p class="mb-0" style="color: #001489;">Taxa justa</p>
+              <img class="mr-2" src="assets/img/icon-check.svg" alt="" />
+              <p class="mb-0" style="color: #001489">Taxa justa</p>
             </span>
             <span class="d-inline-flex align-items-center gap-2">
-              <img class="mr-2" src="assets/img/icon-check.svg" alt="">
-              <p class="mb-0" style="color: #001489;">Suporte humanizado</p>
+              <img class="mr-2" src="assets/img/icon-check.svg" alt="" />
+              <p class="mb-0" style="color: #001489">Suporte humanizado</p>
             </span>
             <span class="d-inline-flex align-items-center gap-2">
-              <img class="mr-2" src="assets/img/icon-check.svg" alt="">
-              <p class="mb-0" style="color: #001489;">Descontos e benefícios</p>
+              <img class="mr-2" src="assets/img/icon-check.svg" alt="" />
+              <p class="mb-0" style="color: #001489">Descontos e benefícios</p>
             </span>
             <span class="d-inline-flex align-items-center gap-2">
-              <img class="mr-2" src="assets/img/icon-check.svg" alt="">
-              <p class="mb-0" style="color: #001489;">Várias formas de lucrar</p>
+              <img class="mr-2" src="assets/img/icon-check.svg" alt="" />
+              <p class="mb-0" style="color: #001489">Várias formas de lucrar</p>
             </span>
           </div>
         </div>
       </div>
     </section>
-    
-    
-    
 
     <!-- jQuery, Bootstrap JS e Juxtapose JS -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -198,168 +261,291 @@
     </script>
 
     <!-- Cadastro Parceiro -->
-<section id="cadastro-parceiro" class="py-5 text-white" data-aos="fade-up" data-aos-duration="1000">
+    <section
+      id="cadastro-parceiro"
+      class="py-5 text-white"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="container">
+        <div class="justify-content-center">
+          <div class="col-lg-10">
+            <h2 class="mb-4">Cadastre-se e garanta sua vaga!</h2>
 
-  <div class="container">
-    <div class="justify-content-center">
-      <div class="col-lg-10">
-        <h2 class="mb-4">Cadastre-se e garanta sua vaga!</h2>
-
-        <!-- Formulário de Cadastro -->
-        <form class="form-cadastro" id="cadastroForm" action="save_motorista.php" method="POST" novalidate>
-          
-          <!-- 1. Informações Básicas -->
-          <div class="mb-4">
-            <label for="nome" class="form-label">Nome</label>
-            <div class="input-group">
-              <input class="form-control form-control-lg" id="nome" name="nome" type="text" placeholder="Seu nome completo" required />
-            </div>
-            <div class="invalid-feedback">O nome é obrigatório.</div>
-          </div>
-
-          <div class="mb-4">
-            <label for="whatsapp" class="form-label">WhatsApp</label>
-            <div class="input-group">
-              <input class="form-control form-control-lg" id="whatsapp" name="whatsapp" type="tel" pattern="\d{10,11}" placeholder="Seu número de WhatsApp" required />
-            </div>
-            <div class="invalid-feedback">O WhatsApp é obrigatório e deve conter 10 ou 11 dígitos.</div>
-          </div>
-
-          <div class="mb-4">
-            <label for="modelo-veiculo" class="form-label">Modelo do carro</label>
-            <div class="input-group">
-              <input class="form-control form-control-lg" id="modelo-veiculo" name="modelo" type="text" placeholder="Modelo do seu carro" required />
-            </div>
-            <div class="invalid-feedback">O modelo do carro é obrigatório.</div>
-          </div>
-
-          <div class="mb-4">
-            <label for="ano-veiculo" class="form-label">Ano do carro (mínimo 2015)</label>
-            <div class="input-group">
-              <input class="form-control form-control-lg" id="ano-veiculo" name="ano" type="number" placeholder="Ano de fabricação" min="2015" required />
-            </div>
-            <div class="invalid-feedback">O ano do veículo deve ser 2015 ou superior.</div>
-          </div>
-
-          <!-- Perguntas de Qualificação -->
-          <div class="mb-4">
-            <label class="form-label">Você já tem experiência como motorista de aplicativo?</label>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="experiencia" id="experiencia-sim" value="Sim" required />
-              <label class="form-check-label" for="experiencia-sim">Sim</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="experiencia" id="experiencia-nao" value="Não" required />
-              <label class="form-check-label" for="experiencia-nao">Não</label>
-            </div>
-            <div class="invalid-feedback">Por favor, selecione uma opção.</div>
-          </div>
-
-          <div class="mb-4">
-            <label class="form-label">Possui veículo próprio ou alugado?</label>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="proprio" id="veiculo-proprio" value="Próprio" required />
-              <label class="form-check-label" for="veiculo-proprio">Próprio</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="proprio" id="veiculo-alugado" value="Alugado" required />
-              <label class="form-check-label" for="veiculo-alugado">Alugado</label>
-            </div>
-            <div class="invalid-feedback">Por favor, selecione uma opção.</div>
-          </div>
-
-          <!-- 3. Termos e Concordância -->
-          <div class="mb-4">
-            <h5>Você concorda com os requisitos da Fupii?</h5>
-            <div class="card p-3">
-              <ul class="list-unstyled ms-3 mb-0">
-                <li class="mb-2"><i class="bi bi-check-circle me-2"></i> Cumprir as normas de trânsito</li>
-                <li class="mb-2"><i class="bi bi-check-circle me-2"></i> Realizar vistoria gratuita do seu veículo em nossa sede</li>
-                <li class="mb-2"><i class="bi bi-check-circle me-2"></i> Apresentar-se bem para o trabalho</li>
-                <li class="mb-2"><i class="bi bi-check-circle me-2"></i> Prestar um bom atendimento para ganhar prêmios</li>
-                <li class="mb-2"><i class="bi bi-check-circle me-2"></i> Realizar treinamento online</li>
-              </ul>
-            </div>
-
-            <div class="form-check mt-3">
-              <input class="form-check-input" type="checkbox" id="concorda-requisitos" name="concorda_requisitos" required />
-              <label class="form-check-label" for="concorda-requisitos">Concordo com os requisitos da Fupii.</label>
-            </div>
-            <div class="invalid-feedback text-white">Você deve concordar com os requisitos para prosseguir.</div>
-          </div>
-
-          <!-- Botão de Envio -->
-          <div class="text-center">
-            <button
-              class="btn-glow w-100"
-              id="submitButtonForm"
-              type="submit"
-              onclick="submitForm(event)"
+            <!-- Formulário de Cadastro -->
+            <form
+              class="form-cadastro"
+              id="cadastroForm"
+              action="save_motorista.php"
+              method="POST"
+              novalidate
             >
-              Enviar Cadastro Fupii
-            </button>
+              <!-- 1. Informações Básicas -->
+              <div class="mb-4">
+                <label for="nome" class="form-label">Nome</label>
+                <div class="input-group">
+                  <input
+                    class="form-control form-control-lg"
+                    id="nome"
+                    name="nome"
+                    type="text"
+                    placeholder="Seu nome completo"
+                    required
+                  />
+                </div>
+                <div class="invalid-feedback">O nome é obrigatório.</div>
+              </div>
+
+              <div class="mb-4">
+                <label for="whatsapp" class="form-label">WhatsApp</label>
+                <div class="input-group">
+                  <input
+                    class="form-control form-control-lg"
+                    id="whatsapp"
+                    name="whatsapp"
+                    type="tel"
+                    pattern="\d{10,11}"
+                    placeholder="Seu número de WhatsApp"
+                    required
+                  />
+                </div>
+                <div class="invalid-feedback">
+                  O WhatsApp é obrigatório e deve conter 10 ou 11 dígitos.
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label for="modelo-veiculo" class="form-label"
+                  >Modelo do carro</label
+                >
+                <div class="input-group">
+                  <input
+                    class="form-control form-control-lg"
+                    id="modelo-veiculo"
+                    name="modelo"
+                    type="text"
+                    placeholder="Modelo do seu carro"
+                    required
+                  />
+                </div>
+                <div class="invalid-feedback">
+                  O modelo do carro é obrigatório.
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label for="ano-veiculo" class="form-label"
+                  >Ano do carro (mínimo 2015)</label
+                >
+                <div class="input-group">
+                  <input
+                    class="form-control form-control-lg"
+                    id="ano-veiculo"
+                    name="ano"
+                    type="number"
+                    placeholder="Ano de fabricação"
+                    min="2015"
+                    required
+                  />
+                </div>
+                <div class="invalid-feedback">
+                  O ano do veículo deve ser 2015 ou superior.
+                </div>
+              </div>
+
+              <!-- Perguntas de Qualificação -->
+              <div class="mb-4">
+                <label class="form-label"
+                  >Você já tem experiência como motorista de aplicativo?</label
+                >
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="experiencia"
+                    id="experiencia-sim"
+                    value="Sim"
+                    required
+                  />
+                  <label class="form-check-label" for="experiencia-sim"
+                    >Sim</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="experiencia"
+                    id="experiencia-nao"
+                    value="Não"
+                    required
+                  />
+                  <label class="form-check-label" for="experiencia-nao"
+                    >Não</label
+                  >
+                </div>
+                <div class="invalid-feedback">
+                  Por favor, selecione uma opção.
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label"
+                  >Possui veículo próprio ou alugado?</label
+                >
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="proprio"
+                    id="veiculo-proprio"
+                    value="Próprio"
+                    required
+                  />
+                  <label class="form-check-label" for="veiculo-proprio"
+                    >Próprio</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="proprio"
+                    id="veiculo-alugado"
+                    value="Alugado"
+                    required
+                  />
+                  <label class="form-check-label" for="veiculo-alugado"
+                    >Alugado</label
+                  >
+                </div>
+                <div class="invalid-feedback">
+                  Por favor, selecione uma opção.
+                </div>
+              </div>
+
+              <!-- 3. Termos e Concordância -->
+              <div class="mb-4">
+                <h5>Você concorda com os requisitos da Fupii?</h5>
+                <div class="card p-3">
+                  <ul class="list-unstyled ms-3 mb-0">
+                    <li class="mb-2">
+                      <i class="bi bi-check-circle me-2"></i> Cumprir as normas
+                      de trânsito
+                    </li>
+                    <li class="mb-2">
+                      <i class="bi bi-check-circle me-2"></i> Realizar vistoria
+                      gratuita do seu veículo em nossa sede
+                    </li>
+                    <li class="mb-2">
+                      <i class="bi bi-check-circle me-2"></i> Apresentar-se bem
+                      para o trabalho
+                    </li>
+                    <li class="mb-2">
+                      <i class="bi bi-check-circle me-2"></i> Prestar um bom
+                      atendimento para ganhar prêmios
+                    </li>
+                    <li class="mb-2">
+                      <i class="bi bi-check-circle me-2"></i> Realizar
+                      treinamento online
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="form-check mt-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="concorda-requisitos"
+                    name="concorda_requisitos"
+                    required
+                  />
+                  <label class="form-check-label" for="concorda-requisitos"
+                    >Concordo com os requisitos da Fupii.</label
+                  >
+                </div>
+                <div class="invalid-feedback text-white">
+                  Você deve concordar com os requisitos para prosseguir.
+                </div>
+              </div>
+
+              <!-- Botão de Envio -->
+              <div class="text-center">
+                <button
+                  class="btn-glow w-100"
+                  id="submitButtonForm"
+                  type="submit"
+                >
+                  Enviar Cadastro Fupii
+                </button>
+              </div>
+            </form>
           </div>
-        </form>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- Script JavaScript para Envio AJAX e Validação -->
-<script>
-  // Função para validação e envio do formulário
-  function submitForm(event) {
-  event.preventDefault(); // Impede o envio padrão do formulário
+    <script>
+      // Função para validação e envio do formulário
+      function submitForm(event) {
+        event.preventDefault(); // Impede o envio padrão do formulário
 
-    const button = document.getElementById("submitButtonForm");
-    const form = document.getElementById("cadastroForm");
+        const button = document.getElementById("submitButtonForm");
+        const form = document.getElementById("cadastroForm");
 
-    // Verifica a validação do formulário
-    if (!form.checkValidity()) {
-      form.classList.add("was-validated");
-      return;
-    }
+        // Verifica a validação do formulário
+        if (!form.checkValidity()) {
+          form.classList.add("was-validated");
+          return;
+        }
 
-    // Define o estado de carregamento do botão
-    button.innerHTML =
-      '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> Enviando...';
-    button.disabled = true;
+        // Define o estado de carregamento do botão
+        button.innerHTML =
+          '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> Enviando...';
+        button.disabled = true;
 
-    const formData = new FormData(form);
+        const formData = new FormData(form);
 
-    // Envia os dados para o servidor PHP para salvar no banco de dados
-    fetch("save_motorista.php", {
-      method: "POST",
-      body: formData,
-    })
-      .then((response) => response.text())
-      .then((result) => {
-        if (result.includes("Cadastro realizado com sucesso!")) {
-          window.location.href = "/sucess.html";
-          // Configura os dados para o envio de SMS via API do SendPulse
-          const data = {
-            email: `dev@fupii.com.br`,
-            phone: `+${formData.get("whatsapp")}`,
-            first_name: formData.get("nome").split(" ")[0], // Primeiro nome
-          };
+        // Envia os dados para o servidor PHP para salvar no banco de dados
+        fetch("save_motorista.php", {
+          method: "POST",
+          body: formData,
+        })
+          .then((response) => response.text())
+          .then((result) => {
+            if (result.includes("Cadastro realizado com sucesso!")) {
+              window.location.href = "/sucess.html";
+              // Configura os dados para o envio de SMS via API do SendPulse
+              const data = {
+                email: `dev@fupii.com.br`,
+                phone: `+${formData.get("whatsapp")}`,
+                first_name: formData.get("nome").split(" ")[0], // Primeiro nome
+              };
 
-          // Envia os dados para a API do SendPulse para enviar a mensagem de boas-vindas via SMS
-          fetch("https://events.sendpulse.com/events/id/afb6453b7927436f9a1fa30b2752d5ef/8869603", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(data),
-          })
-            .then((sendPulseResponse) => sendPulseResponse.json())
-            .then((sendPulseResult) => {
-              if (sendPulseResult.result === "true" || sendPulseResult.result === true) {
-                button.innerHTML = "Cadastro realizado com sucesso!";
-                button.classList.replace("btn-primary", "btn-success");
+              // Envia os dados para a API do SendPulse para enviar a mensagem de boas-vindas via SMS
+              fetch(
+                "https://events.sendpulse.com/events/id/afb6453b7927436f9a1fa30b2752d5ef/8869603",
+                {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                  body: JSON.stringify(data),
+                }
+              )
+                .then((sendPulseResponse) => sendPulseResponse.json())
+                .then((sendPulseResult) => {
+                  if (
+                    sendPulseResult.result === "true" ||
+                    sendPulseResult.result === true
+                  ) {
+                    button.innerHTML = "Cadastro realizado com sucesso!";
+                    button.classList.replace("btn-primary", "btn-success");
 
-                // Adiciona links para baixar o aplicativo
-                const appLinks = document.createElement("div");
-                appLinks.innerHTML = `
+                    // Adiciona links para baixar o aplicativo
+                    const appLinks = document.createElement("div");
+                    appLinks.innerHTML = `
                   <div class="mt-4 d-flex justify-content-center gap-2">
                     <a href="https://apps.apple.com/br/app/fupii-motorista/id6502373273?l=en-GB" target="_blank" class="btn btn-dark d-flex align-items-center">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple me-2" viewBox="0 0 16 16">
@@ -375,47 +561,47 @@
                     </a>
                   </div>
                 `;
-                button.parentNode.appendChild(appLinks);
-              } else {
-                showErrorState(button);
-              }
-            })
-            .catch((error) => {
-              console.error("Erro ao enviar para SendPulse:", error);
+                    button.parentNode.appendChild(appLinks);
+                  } else {
+                    showErrorState(button);
+                  }
+                })
+                .catch((error) => {
+                  console.error("Erro ao enviar para SendPulse:", error);
+                  showErrorState(button);
+                });
+            } else {
               showErrorState(button);
-            });
-        } else {
-          showErrorState(button);
+            }
+          })
+          .catch((error) => {
+            console.error("Erro ao salvar os dados no banco:", error);
+            showErrorState(button);
+          });
+      }
+
+      // Função para exibir o estado de erro e resetar após 5 segundos
+      function showErrorState(button) {
+        button.innerHTML = "Erro ao enviar. Tente novamente.";
+        button.classList.replace("btn-primary", "btn-danger");
+        button.disabled = false;
+
+        // Volta ao estado inicial após 5 segundos
+        setTimeout(() => {
+          button.innerHTML = "Quero Fazer Parte da Fupii!";
+          button.classList.replace("btn-danger", "btn-primary");
+        }, 3000);
+      }
+
+      // Event Listener para o DOMContentLoaded
+      document.addEventListener("DOMContentLoaded", function () {
+        // Adicionar event listener para o botão de envio do formulário
+        const submitButton = document.getElementById("submitButtonForm");
+        if (submitButton) {
+          submitButton.addEventListener("click", submitForm);
         }
-      })
-      .catch((error) => {
-        console.error("Erro ao salvar os dados no banco:", error);
-        showErrorState(button);
       });
-  }
-
-  // Função para exibir o estado de erro e resetar após 5 segundos
-  function showErrorState(button) {
-    button.innerHTML = "Erro ao enviar. Tente novamente.";
-    button.classList.replace("btn-primary", "btn-danger");
-    button.disabled = false;
-
-    // Volta ao estado inicial após 5 segundos
-    setTimeout(() => {
-      button.innerHTML = "Quero Fazer Parte da Fupii!";
-      button.classList.replace("btn-danger", "btn-primary");
-    }, 3000);
-  }
-
-  // Event Listener para o DOMContentLoaded
-  document.addEventListener("DOMContentLoaded", function () {
-    // Adicionar event listener para o botão de envio do formulário
-    const submitButton = document.getElementById("submitButtonForm");
-    if (submitButton) {
-      submitButton.addEventListener("click", submitForm);
-    }
-  });
-</script>
+    </script>
     <!-- Footer-->
     <footer class="footer bg-light">
       <div class="container">
